@@ -1,3 +1,4 @@
+import random
 #function calls 2 variable. First variable = requested number of cards in generated deck.
     #Second variable: True returns deck as list. False(default) returns deck as dictionary with each card assigned value (Two of Hearts: 2, Queen of Diamonds: 10 etc)
 def deck_generator(num_of_cards = 52, check = False):
