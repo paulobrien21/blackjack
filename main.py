@@ -98,7 +98,7 @@ while play == "Y":
             print("")
         #dealer turn
         dealer_hand, ace_control = ace_check(dealer_hand)
-        while dealer_score <= 21 and dealer_score < player_score:
+        while dealer_score <= 16 and dealer_score < player_score:
             print("")
             print("Dealer thinking.......")
             time.sleep(2)
@@ -118,8 +118,10 @@ while play == "Y":
             print("Dealer Bust! You win! :)")
         elif dealer_score == player_score:
             print("Dealer has settled for the draw...")
-        else:
+        elif dealer_score > player_score:
             print("Dealer wins!.. :(")
+        else:
+            print("Dealer stands....You win! :)")
 
     time.sleep(2)
     #game is finished and user can decide to play again or end program
